@@ -65,7 +65,7 @@ Variables
 Global style
 --------- */
 body {
-    background-color: var(--grey-800);
+    background-color: var(--grey-100);
 }
 
 p {
