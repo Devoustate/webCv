@@ -1,0 +1,403 @@
+/* ---------
+Variables
+--------- */
+:root {
+    /* main color */
+    --main-50: #fffbeb;
+    --main-100: #fef3c7;
+    --main-200: #fde68a;
+    --main-300: #fcd34d;
+    --main-400: #fbbf24;
+    --main-500: #f59e0b;
+    --main-600: #d97706;
+    --main-700: #b45309;
+    --main-800: #92400e;
+    --main-900: #78350f;
+
+    /* secondary color */
+    --second-50: #f5f3ff;
+    --second-100: #ede9fe;
+    --second-200: #ddd6fe;
+    --second-300: #c4b5fd;
+    --second-400: #a78bfa;
+    --second-500: #8b5cf6;
+    --second-600: #7c3aed;
+    --second-700: #6d28d9;
+    --second-800: #5b21b6;
+    --second-900: #4c1d95;
+
+    /*-grey */
+    --grey-50: #f9fafb;
+    --grey-100: #f3f4f6;
+    --grey-200: #e5e7eb;
+    --grey-300: #d1d5db;
+    --grey-400: #9ca3af;
+    --grey-500: #6b7280;
+    --grey-600: #4b5563;
+    --grey-700: #374151;
+    --grey-800: #1f2937;
+    --grey-900: #111827;
+
+    /* other color */
+    --wh: #fff;
+    --bl: #000000;
+
+    /* Font */
+    --mf: lalezar, cursive;
+    --sf: kanit, sans-serif;
+    --funf: DynaPuff, cursive;
+
+    /* Other variable */
+    --padding: 0px 100px;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* ---------
+Global style
+--------- */
+body {
+    background-color: rgb(18, 18, 18);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+/* icon style */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* ==============
+Main project
+================= */
+
+/* Navigation */
+.nav {
+    background-color: var(--main-400);
+    color: var(--grey-700);
+    padding: var(--padding);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 70px;
+}
+
+.navInfo {
+    display: flex;
+    width: 100%
+}
+
+.navInfo a {
+    max-width: 100%;
+    font-family: var(--mf);
+    color: var(--grey-700);
+    font-size: x-large;
+    margin: 10px;
+}
+
+.aboutBtn {
+    margin-left: auto;
+}
+
+.homeBTn {
+    padding-left: 50px;
+
+}
+
+.navIcon {
+    display: none;
+    color: var(--grey-100);
+}
+
+.navBtn {
+    display: none;
+    color: var(--grey-700);
+}
+
+.navInfo a:hover {
+    color: var(--main-100);
+    transition: 0.5s;
+}
+
+/* Main info */
+.threatContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    padding-left: 600px;
+}
+
+.pageText {
+    font-family: var(--funf);
+    font-size: 70px;
+    line-height: 60px;
+    width: 350px;
+    text-transform: capitalize;
+    text-align: center;
+    display: grid;
+}
+
+.orangeThreat,
+.moveCont {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.moveCont {
+    padding-left: 4px;
+    padding-bottom: 4px;
+}
+
+.orangeThreat {
+    color: var(--main-500);
+    width: 350px;
+    display: flex;
+}
+
+.whiteThreat {
+    color: var(--wh);
+    width: 350px;
+    display: flex;
+}
+
+
+/* foot */
+.foot {
+    background-color: var(--main-700);
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footText {
+    display: flex;
+}
+
+.textCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy {
+    font-size: x-large;
+    margin-right: 7px;
+}
+
+#date,
+.footText {
+    font-weight: 600;
+    font-family: var(--sf);
+}
+
+#date {
+    padding-right: 20px;
+}
+
+.handsomeFace img {
+    position: fixed;
+    z-index: -1;
+    max-width: 600px;
+    left: -50px;
+    bottom: -75px;
+    border-radius: 200px;
+    opacity: 0.9;
+}
+
+
+/* experience section */
+.exp {
+    display: flex;
+    justify-content: center;
+}
+
+.expPdf {
+    display: flex;
+    margin-top: 30px;
+    width: 1000px;
+    height: 750px;
+    border: 10px var(--main-500) solid;
+    border-radius: 30px;
+    margin-bottom: 60px;
+}
+
+/* source code section*/
+.scCont {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid lime; */
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.sCode {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.scTitle {
+    border: 8px solid var(--main-600);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--grey-200);
+    font-family: mf;
+    font-size: 40px;
+}
+
+.scContent {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid lime; */
+    display: flex;
+    margin-top: 50px;
+    height: 500px;
+    border: 5px solid var(--main-400);
+    border-radius: 10px;
+}
+
+.scContent iframe {
+    width: 500px;
+}
+
+/* about section */
+.aboutCont {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    width: 700px;
+    font-family: var(--sf);
+    color: var(--grey-100);
+    font-size: large;
+    padding: 20px;
+    margin-top: 20px;
+    border: 5px solid var(--main-500);
+    text-align: center;
+}
+
+/* --------------------------------
+Media
+--------------------------------- */
+@media screen and (max-width: 1300px) {
+    .nav {
+        padding: 0px 90px;
+    }
+
+    .handsomeFace img {
+        max-width: 400px;
+        bottom: -20px;
+    }
+
+    .threatContainer {
+        transform: scale(0.8);
+        margin-top: -60px;
+        padding-left: 500px;
+    }
+
+    .scCont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jsCodeCont {
+        margin-top: 70px;
+        margin-bottom: 60px;
+    }
+
+    .scContent {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .handsomeFace img {
+        max-width: 300px;
+        bottom: -20px;
+    }
+
+    .threatContainer {
+        margin-top: -180px;
+    }
+
+    .threatContainer {
+        transform: scale(0.6);
+        padding-left: 150px;
+    }
+
+    .nav {
+        padding: 0 50px 0 50px;
+    }
+
+
+    .navInfo {
+        background-color: var(--main-600);
+        display: none;
+        position: absolute;
+        margin: 250px 0 0 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .aboutBtn {
+        margin-left: 0;
+    }
+
+    .navIcon {
+        padding: 0;
+        color: var(--grey-100);
+        display: flex;
+    }
+
+    .navBtn {
+        display: flex;
+        margin-left: auto;
+        background: none;
+        color: var(--grey-700);
+
+    }
+
+    .hideMyInfo {
+        display: flex;
+    }
+
+    .expPdf {
+        height: 600px;
+    }
+}
